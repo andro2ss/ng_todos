@@ -4,13 +4,15 @@
     <h2>Add Task</h2>
     <form class="todos__form" #f="ngForm" (ngSubmit)="handleSubmit(f)">
       <input type="text" id="text" name="text" ngModel>
-      <button type="submit" class="btn-floating waves-effect waves-light green"><i class="material-icons">add</i>
-      </button>
+      <div>
+        <button type="submit" class="btn-floating waves-effect waves-light green"><i class="material-icons">add</i>
+        </button>
+      </div>
     </form>
   </div>
 
   <div class="todos__box" *ngIf="isNotDone(todos)">
-    <h2 >Tasks</h2>
+    <h2>Tasks</h2>
     <ul class="todos__list">
       <li class="list__item" *ngFor="let todo of todos">
         <div *ngIf="!this.todo.isDone">
