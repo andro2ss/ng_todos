@@ -1,0 +1,45 @@
+$elementDis: 0.5rem;
+
+.todos {
+  &__container {
+    padding: $elementDis;
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    input {
+      width: 80%;
+    }
+
+    button {
+      margin-left: $elementDis;
+    }
+  }
+
+  &__list {
+    .list {
+      &__item {
+        div {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: $elementDis;
+        }
+
+        button {
+          margin-left: $elementDis;
+        }
+      }
+    }
+  }
+}
+
+
