@@ -1,7 +1,7 @@
 <div class="todos__container">
   <h1>To Do List</h1>
-  <form class="todos__form">
-    <input type="text" id="text" name="text">
+  <form class="todos__form" #f="ngForm" (ngSubmit)="handleSubmit(f)">
+    <input type="text" id="text" name="text" ngModel>
     <button type="submit" class="btn-floating waves-effect waves-light green"><i class="material-icons">add</i></button>
   </form>
   <ul class="todos__list">
